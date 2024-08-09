@@ -60,6 +60,11 @@ body {
   font-size: 16px;
   cursor: help;
 
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+
 }
 
 a .item,
@@ -86,13 +91,6 @@ a .item-title,
 
 .item:hover .note {
   color: ghostwhite;
-}
-
-.item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .item-title {
@@ -122,7 +120,7 @@ a .item-title,
   font-size: 14px;
   line-height: 20px;
   font-family: 'IBM Plex Mono', 'Courier', monospace;
-  item-transform: uppercase;
+  text-transform: uppercase;
   background: ghostwhite;
   border: 1px solid mediumblue;
   border-radius: 20px;
@@ -169,10 +167,6 @@ a .item-title,
   max-height: 300px;
   padding-top: 20px;
 
-}
-
-.schedule img {
-  filter: grayscale(100%);
 }
 
 
@@ -289,12 +283,19 @@ h3 {
     width: 100%;
   }
 
+  .item {
+    width: 33%;
+  }
+
   .contents {
     margin-left: 0px;
   }
 
-  /* .dueSchedule {
-    margin: 5px 0px 10px 0;
-} */
+}
 
+@media only screen and (max-width: 520px) {
+
+  .item {
+    width: 100%;
+  }
 }
