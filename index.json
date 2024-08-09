@@ -1,0 +1,10 @@
+{
+	"title": "type-3",
+	"about": "type-3",
+	"menu": {
+		"✻ TYPE 3 ✻": "info.html",
+		"Syllabus": "syllabus.html",
+		"Schedule": "schedule.html",
+		"Readings": "readings.html"
+	}
+}

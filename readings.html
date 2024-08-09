@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h2>Readings</h2>
+  </div>
+
+  <div id="reading-container">
+    <a href="{{text.link}}" style="border:none !important" target="_blank">
+      <div class="item" v-for="(text,index) in texts">
+        <div class="item-title">{{text.title}}</div>
+        <div class="item-subtitle">{{text.author}}</div>
+    </a>
+  </div>
+
+  <!-- end row element -->
+
+  </div>
+
+  <script type="module">
+
+    new Vue({
+      el: "#reading-container",
+      data: {
+        texts: [
+          {
+            title: `Task of the Translator`,
+            author: `Walter Benjamin`,
+            link: `https://drive.google.com/drive/folders/1gUA4Kv6KQsFSuEHkIeJYD4DOnqU45El3?usp=sharing`
+          },
+          {
+            title: `Glitch Feminism`,
+            author: `Legacy Russell`,
+            link: `https://drive.google.com/drive/folders/1gUA4Kv6KQsFSuEHkIeJYD4DOnqU45El3?usp=sharing`
+          },
+          {
+            title: `Gutenberg Didn't Actually Invent the Printing Press`,
+            author: `Name`,
+            link: `https://lithub.com/so-gutenberg-didnt-actually-invent-the-printing-press/`
+          },
+          {
+            title: `Aesthetic Categories`,
+            author: `Sianne Ngai`,
+            link: `https://drive.google.com/drive/folders/1gUA4Kv6KQsFSuEHkIeJYD4DOnqU45El3?usp=sharing`
+          },
+          {
+            title: `What We Learn When Language Is Built Not Written `,
+            author: `Name`,
+            link: `https://eyeondesign.aiga.org/is-it-art-or-is-it-type-what-we-learn-when-language-is-built-not-written/`
+          },
+          {
+            title: `On Opacity`,
+            author: `Eduoard Glissant`,
+            link: `https://drive.google.com/drive/folders/1gUA4Kv6KQsFSuEHkIeJYD4DOnqU45El3?usp=sharing`
+          }
+
+        ]
+      }
+
+    })
+
+
+  </script>
+</body>
+
+</html>
