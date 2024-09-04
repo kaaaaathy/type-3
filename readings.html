@@ -15,17 +15,22 @@
 
   <div class="header">
     <h2>Readings</h2>
+    These are all the links + PDFs to readings this semester. Please don't worry too much about the size of the readings
+    or list; we will largely be reading excerpts of texts, not complete books. Also refer to the schedule to see which
+    ones are
+    required vs. recommended.
   </div>
 
   <div id="reading-container">
-    <a href="{{text.link}}" style="border:none !important" target="_blank">
-      <div class="item" v-for="(text,index) in texts">
+    <div class="item" v-for="(text,index) in texts">
+      <a :href="text.link" style="border:none !important" target="_blank">
+
         <div class="item-title">{{text.title}}</div>
         <div class="item-subtitle">{{text.author}}</div>
-    </a>
-  </div>
+      </a>
+    </div>
 
-  <!-- end row element -->
+    <!-- end row element -->
 
   </div>
 
@@ -36,9 +41,19 @@
       data: {
         texts: [
           {
+            title: `In The Beginning Was The Word And The Word Was Embodiedt`,
+            author: `David Robson`,
+            link: `https://aeon.co/essays/in-the-beginning-was-the-word-and-the-word-was-embodied`
+          },
+          {
             title: `Task of the Translator`,
             author: `Walter Benjamin`,
             link: `https://drive.google.com/file/d/1v9B8Q4EJF0gdio-zj6KDPIImO-Hpm2QU/view?usp=drive_link`
+          },
+          {
+            title: `Say Translation is Art`,
+            author: `Sawako Nakayasu`,
+            link: `https://drive.google.com/file/d/1yTHvzTwsFSkegITSDgxhbWRhVPdId2qj/view?usp=drive_link`
           },
           {
             title: `Glitch Feminism`,
@@ -55,6 +70,13 @@
             author: `Sianne Ngai`,
             link: `https://drive.google.com/file/d/1i1dXG4xc6jUMsipQz5Z2hJhpsARO7KPj/view?usp=drive_link`
           },
+          {
+            title: `Design as Art`,
+            author: `Bruno Munari`,
+            link: `https://drive.google.com/file/d/1i1dXG4xc6jUMsipQz5Z2hJhpsARO7KPj/view?usp=drive_link`
+          },
+
+
           {
             title: `What We Learn When Language Is Built Not Written `,
             author: `Meg Miller`,
