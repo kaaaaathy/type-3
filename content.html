@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h2>Text Files</h2>
+    These are links to the unformated, "plain-text" versions of various essays and book excerpts to be used for
+    typesetting. You might find that there are some errors because of how they have been converted from PDF via OCR
+    technologies.
+    Please correct these in your own typesetting.
+    </br></br> </br></br>
+
+    <b>ESSAYS FOR WEEK 4</b> <a class="button"
+      href="https://drive.google.com/drive/folders/1KLFLvY6nXJs3M7LFee-S383PJeYHrOK2?usp=drive_link"
+      target="_blank">FOLDER</a>
+
+    </br></br>
+
+    These are all between 2500–3000 words long. You can of course use your own if it meets the word count.
+
+    <div id="week4">
+      <div class="item" v-for="(text,index) in texts">
+        <a :href="text.link" style="border:none !important" target="_blank">
+
+          <div class="item-title">{{text.title}} 📄 </div>
+          <div class="item-subtitle">{{text.author}}</div>
+        </a>
+      </div>
+    </div>
+
+
+    <b>BOOK EXCERPTS FOR WEEK 6</b> <a class="button"
+      href="https://drive.google.com/drive/folders/1Wlbf6szemVFOSTH2nBw03iO55LAkBrkN?usp=drive_link"
+      target="_blank">FOLDER</a>
+
+    </br></br>
+    These are either long chapters or entire books. Please excerpt these
+    accordingly to be roughly ~4000 words in length. Again, feel free to use your own if it meets the word count.
+
+
+    <div id="week6">
+      <div class="item" v-for="(text,index) in texts">
+        <a :href="text.link" style="border:none !important" target="_blank">
+
+          <div class="item-title">{{text.title}} 📄</div>
+          <div class="item-subtitle">{{text.author}}</div>
+        </a>
+      </div>
+      <!-- end row element -->
+
+    </div>
+  </div>
+
+  <script type="module">
+
+    new Vue({
+      el: "#week4",
+      data: {
+        texts: [
+          {
+            title: `Glitch Feminism Chap. 1`,
+            author: `Legacy Russell`,
+            link: `https://docs.google.com/document/d/1tzNa4JNN2u4CqBczA9XVN7_jtPvjAQssEAhVkGbEc1E/edit`
+          },
+          {
+            title: `In The Beginning Was The Word And The Word Was Embodied`,
+            author: `David Robson`,
+            link: `https://docs.google.com/document/d/18kvBcuto-Zqyz18bX84P9TtPIZlUni4HIKbY-jnTeAg/edit`
+          },
+          {
+            title: `On Transparency and Opacity`,
+            author: `Eduoard Glissant`,
+            link: `https://docs.google.com/document/d/17yB6kTh6gEfkM3c_cB_G9wuOMrOerLrbmMEYYso80n4/edit`
+          }]
+
+
+      }
+    })
+
+    new Vue({
+      el: "#week6",
+      data: {
+        texts: [
+          {
+            title: `On Aesthetic Categories, Intro`,
+            author: `Sianne Ngai`,
+            link: ``
+          },
+          {
+            title: `Design as Art`,
+            author: `Bruno Munari`,
+            link: `https://drive.google.com/file/d/1v9B8Q4EJF0gdio-zj6KDPIImO-Hpm2QU/view?usp=drive_link`
+          }]
+
+
+      }
+    })
+  </script>
+</body>
+
+</html>

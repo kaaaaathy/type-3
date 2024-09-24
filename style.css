@@ -36,7 +36,9 @@ body {
 
 }
 
-#reading-container {
+#reading-container,
+#week4,
+#week6 {
   padding-top: 20px;
   display: flex;
   overflow: auto;
@@ -50,7 +52,7 @@ body {
 }
 
 .item {
-  width: 140px;
+  width: 160px;
   height: 220px;
   border: 1px solid mediumblue;
   padding: 10px 20px;
@@ -213,7 +215,7 @@ h3 {
   font-size: 14px;
   font-weight: normal;
   padding-top: 20px;
-  item-transform: uppercase;
+  text-transform: uppercase;
 
 }
 
@@ -228,7 +230,7 @@ h3 {
 .note {
   font-family: 'IBM Plex Mono', 'Courier', monospace;
   font-size: 14px;
-  item-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .imageCaption {
