@@ -19,34 +19,11 @@
     typesetting. You might find that there are some errors because of how they have been converted from PDF via OCR
     technologies.
     Please correct these in your own typesetting.
-    </br></br> </br></br>
+    </br></br> </br>
 
-    <b>ESSAYS FOR WEEK 4</b> <a class="button"
-      href="https://drive.google.com/drive/folders/1KLFLvY6nXJs3M7LFee-S383PJeYHrOK2?usp=drive_link"
-      target="_blank">FOLDER</a>
-
-    </br></br>
-
-    These are all between 2500–3000 words long. You can of course use your own if it meets the word count.
-
-    <div id="week4">
-      <div class="item" v-for="(text,index) in texts">
-        <a :href="text.link" style="border:none !important" target="_blank">
-
-          <div class="item-title">{{text.title}} 📄 </div>
-          <div class="item-subtitle">{{text.author}}</div>
-        </a>
-      </div>
-    </div>
-
-
-    <b>BOOK EXCERPTS FOR WEEK 6</b> <a class="button"
+    <b>Link to Google Drive</b> →<a class="button"
       href="https://drive.google.com/drive/folders/1Wlbf6szemVFOSTH2nBw03iO55LAkBrkN?usp=drive_link"
       target="_blank">FOLDER</a>
-
-    </br></br>
-    These are either long chapters or entire books. Please excerpt these
-    accordingly to be roughly ~4000 words in length. Again, feel free to use your own if it meets the word count.
 
 
     <div id="week6">
@@ -65,7 +42,7 @@
   <script type="module">
 
     new Vue({
-      el: "#week4",
+      el: "#week6",
       data: {
         texts: [
           {
@@ -82,16 +59,7 @@
             title: `On Transparency and Opacity`,
             author: `Eduoard Glissant`,
             link: `https://docs.google.com/document/d/17yB6kTh6gEfkM3c_cB_G9wuOMrOerLrbmMEYYso80n4/edit`
-          }]
-
-
-      }
-    })
-
-    new Vue({
-      el: "#week6",
-      data: {
-        texts: [
+          },
           {
             title: `On Aesthetic Categories, Intro`,
             author: `Sianne Ngai`,
