@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>type 3 digital reader</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/anthology.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+    <p id="surprise">☺</p>
+    <div id="quote1">
+        <marquee scrollamount="3">A glyph (/ɡlɪf/ GLIF) is any kind of purposeful mark. In typography, a
+            glyph is "the specific shape, design, or representation of a
+            character".[1] It is a particular graphical representation, in a
+            particular typeface, of an element of written language. A grapheme, or
+            part of a grapheme (such as a diacritic), or sometimes several graphemes
+            in combination (a composed glyph)[a] can be represented by a glyph.
+            ✰ WIKIPEDIA ✰ </marquee>
+    </div>
+
+    <div id="quote2">
+        <marquee direction="right" scrollamount="3">There’s a basic injustice in the worldwide spread of the
+            transparency
+            and the projection of Western thought. Why must we evaluate people on
+            the scale of the transparency of ideas proposed by the West? … As far as
+            I’m concerned, a person has the right to be opaque. ✰ ÉDUOARD GLISSANT ✰
+            Glitch feminism urges us to consider the in-between as a core component
+            of survival — neither masculine nor feminine, neither male nor female,
+            but a spectrum across which we may be empowered to choose and define
+            ourselves for ourselves. … Through the digital, the body “in glitch”
+            finds its genesis. ✰ LEGACY RUSSELL ✰
+        </marquee>
+    </div>
+    <!-- this is the start of content -->
+    <section>
+        <!--         <p id="glyph">type 3</p> -->
+        <h1>
+            <div id="logo">
+                <span class="title" id="t">T</span><span class="title" id="y">y</span><span class="title"
+                    id="p">p</span><span class="title" id="e">e</span><span class="title" id="3">&nbsp;3</span>
+            </div>
+            Digital Reader
+        </h1>
+
+        <section id="desc">
+            <h2>
+                <p style="font-size:12px;">← hover on me</p>
+                </br> </br>
+                A collection of works from students in kathy's Type 3 class exploring
+                web readership, glitches, illegibility, and typography.
+
+            </h2>
+            <h2>
+                If we suppose all these signs and symbols to be already known to the
+                reader, as they will be in the future, will we be able to write a
+                story that makes sense? A certain elasticity of interpretation is
+                clearly necessary.
+                <br /><br />
+                We shall try to use the symbols as the words are used in a poem: they
+                will have more than one meaning, and the meanings will change
+                according to where they are put.
+                <p id="attribution">—BRUNO MUNARI</p>
+            </h2>
+        </section>
+    </section>
+
+    <div id="container">
+        <div v-for="(website,index) in websites">
+            <div class="item"
+                :style="{top:website.ypos + 'px', left:website.xpos +'px', 'animation-delay':website.delay+'s'}">
+                <div class="dotcontainer">
+
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <p class="browserbar">
+                        {{website.student}}
+                    </p>
+                </div>
+                <a :href="website.link" style="text-decoration: none !important" target="_blank">
+                    <div class="item-title">{{website.name}}</div>
+                    <div class="item-subtitle">{{website.student}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/anthology.js"></script>
+
+</html>
