@@ -2,10 +2,10 @@
 	"title": "type-3",
 	"about": "type-3",
 	"menu": {
-		"✻ TYPE 3 ✻": "info.html",
-		"Syllabus": "syllabus.html",
-		"Schedule": "schedule.html",
+		"⟡ TYPE 3 ⟡": "info.html",
+		"Syllabus": "https://docs.google.com/document/d/1sXQZVitN5SxpWBCBk86sPDHXBVqnb5Whg53DKdmPM48/edit?usp=sharing",
+		"Schedule": "https://docs.google.com/document/d/1u6SLMLzK5GNndptwglktqVbSpYx42Z_SRQPGAjoC8p0/edit?usp=sharing",
 		"Readings": "readings.html",
-		"Text Files": "content.html"
+		"Resources": ""
 	}
 }
