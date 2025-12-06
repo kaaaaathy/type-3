@@ -1,0 +1,48 @@
+body {
+  font-size: 12px;
+  font-family: monospace;
+  text-align: center;
+  margin: 40px;
+  background: papayawhip;
+}
+
+p {
+  min-height: 1.2rem;
+  font-size: 30px;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  font-family: "Arial", sans-serif;
+  text-transform: lowercase;
+}
+#thing1 {
+  background: pink;
+  color: purple;
+}
+
+#thing2 {
+  background: blue;
+  color: aliceblue;
+}
+
+#thing3 {
+  background: springgreen;
+  color: darkgreen;
+}
+
+.load {
+  animation: spin 4s infinite linear;
+  font-family: monospace;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+button {
+  margin-top: 10px;
+}
